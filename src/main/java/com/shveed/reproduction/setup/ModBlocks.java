@@ -15,16 +15,14 @@ public class ModBlocks {
 
     //TODO: IDEAS: 1. Oil Soaked Stone
 
-    public static final RegistryObject<Block> COPPER_ORE = register("copper_ore", () ->
-            new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .hardnessAndResistance(3, 10)
-                    .harvestLevel(2)
-                    .sound(SoundType.STONE)));
+    public static final RegistryObject<Block> COPPER_ORE = register("copper_ore", () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                                                                    .hardnessAndResistance(3, 10)
+                                                                    .harvestLevel(2)
+                                                                    .sound(SoundType.STONE)));
 
-    public static final RegistryObject<Block> COPPER_BLOCK = register("copper_block", () ->
-            new Block(AbstractBlock.Properties.create(Material.IRON)
-                    .hardnessAndResistance(3, 10)
-                    .sound(SoundType.METAL)));
+    public static final RegistryObject<Block> COPPER_BLOCK = register("copper_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+                                                                    .hardnessAndResistance(3, 10)
+                                                                    .sound(SoundType.METAL)));
 
     static void register(){
 
