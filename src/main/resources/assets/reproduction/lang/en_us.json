@@ -1,4 +1,9 @@
 {
-  "itemgroup.reproductiontab": "Reproduction",
-  "item.reproduction.leaf": "Leaf"
+  "itemGroup.reproductiontab": "Reproduction",
+
+
+  "item.reproduction.leaf": "Leaf",
+
+
+  "block.reproduction.leaf_block": "Block of Leaves"
 }

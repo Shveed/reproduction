@@ -1,6 +1,7 @@
 package com.exels.reproduction;
 
-import com.exels.reproduction.factory.ItemsFactory;
+import com.exels.reproduction.registry.BlockRegistry;
+import com.exels.reproduction.registry.ItemsRegistry;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,7 +20,8 @@ public class Reproduction {
     public Reproduction() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ItemsFactory.register(modEventBus);
+        ItemsRegistry.register(modEventBus);
+        BlockRegistry.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
