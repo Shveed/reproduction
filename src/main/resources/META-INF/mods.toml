@@ -1,5 +1,5 @@
 modLoader = "javafml" #mandatory
-loaderVersion = "[44,)" #mandatory
+loaderVersion = "[43,)" #mandatory
 license = "All Rights Reserved"
 # A URL to refer people to when problems occur with this mod
 #issueTrackerURL="http://my.issue.tracker/" #optional
@@ -8,7 +8,7 @@ license = "All Rights Reserved"
 [[mods]] #mandatory
 
 modId = "reproduction" #mandatory
-version = "0.0.1-1.19.3" #mandatory
+version = "0.0.1-1.19.2" #mandatory
 displayName = "Reproduction" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification <here>
@@ -38,12 +38,12 @@ description = '''
 [[dependencies.reproduction]] #optional
 modId = "forge" #mandatory
 mandatory = true #mandatory
-versionRange = "[44,)" #mandatory
+versionRange = "[43,)" #mandatory
 ordering = "NONE"
 side = "BOTH"
 [[dependencies.reproduction]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.19.3,1.20)"
+versionRange = "[1.19.2,1.20)"
 ordering = "NONE"
 side = "BOTH"
