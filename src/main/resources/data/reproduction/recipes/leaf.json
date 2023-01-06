@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "reproduction:leaf_block"
+    }
+  ],
+  "result": {
+    "item": "reproduction:leaf",
+    "count": 9
+  }
+}

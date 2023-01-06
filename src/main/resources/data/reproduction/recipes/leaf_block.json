@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {"item": "reproduction:leaf"}
+  },
+  "result": {
+    "item": "reproduction:leaf_block"
+  }
+}

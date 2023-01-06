@@ -5,6 +5,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
@@ -21,7 +22,8 @@ public class BlockRegistry {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Reproduction.MOD_ID);
 
     public static final RegistryObject<Block> LEAF_BLOCK = registerBlock("leaf_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.GRASS, MaterialColor.GRASS).instabreak()),
+            () -> new Block(BlockBehaviour.Properties.of(Material.LEAVES).instabreak()
+                    .sound(SoundType.GRASS)),
             TabsRegistry.REPRODUCTION_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(
